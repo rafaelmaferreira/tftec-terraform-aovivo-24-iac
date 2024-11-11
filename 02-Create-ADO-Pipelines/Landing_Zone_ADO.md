@@ -12,7 +12,7 @@ Example: `tftec-ao-vivo-sp-2024`
 
 Go to Library > add Variable group > activate Link secrets from an Azure Key Vault as variables.
 
-Variables group name: `tftec-iac-vars`
+Variables group name: `pipelines-aks-vars`
 
 Add the target subscription.
 Add the Key Vault.

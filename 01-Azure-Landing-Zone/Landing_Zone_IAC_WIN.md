@@ -11,7 +11,7 @@ $env:ARM_SUBSCRIPTION_ID=""
 
 ### The name of the resource group where the storage account for the backend should be created
 ```powershell
-$env:TF_BACKEND_RESOURCE_GROUP="rg-tftec-terraform-tfstate"
+$env:TF_BACKEND_RESOURCE_GROUP="rg-tfstate"
 ```
 
 ### The region where the resource group for the backend should be created

@@ -6,12 +6,12 @@
 
 ### The target azure subscription
 ```bash
-export ARM_SUBSCRIPTION_ID=b9ce8dd6-e2f1-4f90-84a2-c4915fc609ec
+export ARM_SUBSCRIPTION_ID=67679a5f-45e1-4949-87ac-25df76d12478
 ```
 
 ### The name of the resource group where the storage account for the backend should be created
 ```bash
-export TF_BACKEND_RESOURCE_GROUP=rg-tftec-terraform-tfstate
+export TF_BACKEND_RESOURCE_GROUP=rg-tfstate
 ```
 
 ### The region where the resource group for the backend should be created
@@ -21,7 +21,7 @@ export TF_BACKEND_LOCATION=eastus
 
 ### The name of the storage account for the backend
 ```bash 
-export TF_BACKEND_STORAGE_ACCOUNT=tftec24aovivosp
+export TF_BACKEND_STORAGE_ACCOUNT=stotfstateaks897789
 ```
 
 ### The name of the storage account container for the backend
@@ -36,12 +36,12 @@ export TF_BACKEND_KEY=tfstate
 
 ### Key vault name
 ```bash
-export KEY_VAULT_NAME=kv-tftecaovivo24
+export KEY_VAULT_NAME=kv-tfstateaks867
 ```
 
 ### Tenant ID
 ```bash
-export ARM_TENANT_ID=cab1ba99-21e0-4a40-8f98-aef71b9b0f80
+export ARM_TENANT_ID=3407a162-d311-47ee-9fe1-92a7dbf6688a
 ```
 
 ### Access key from storage account backend Terraform (After you have already created the storage!)

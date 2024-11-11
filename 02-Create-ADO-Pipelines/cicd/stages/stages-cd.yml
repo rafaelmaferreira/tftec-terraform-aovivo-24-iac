@@ -2,7 +2,7 @@
 stages:        
 - stage: CD_Stage
   variables:
-    - group: tftec-iac-vars
+    - group: pipelines-aks-vars
   displayName: Continuous Deployment
   jobs:  
   - job: Apply
