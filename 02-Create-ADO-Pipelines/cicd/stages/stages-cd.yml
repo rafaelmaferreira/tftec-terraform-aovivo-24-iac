@@ -15,7 +15,7 @@ stages:
           workingDirectory: '$(System.DefaultWorkingDirectory)/03-Create-AKS-Cluster/stacks/tftec'
           commandOptions: '-reconfigure'
           backendType: 'azurerm'
-          backendServiceArm: 'tftec-devops'
+          backendServiceArm: 'pipelines-aks'
           backendAzureRmResourceGroupName: '$(TF-BACKEND-RESOURCE-GROUP)'
           backendAzureRmStorageAccountName: '$(TF-BACKEND-STORAGE-ACCOUNT)'
           backendAzureRmContainerName: '$(TF-BACKEND-CONTAINER)'
@@ -25,7 +25,7 @@ stages:
         displayName: Terraform Apply
         inputs:
           command: 'apply'
-          environmentServiceName: 'tftec-devops'
+          environmentServiceName: 'pipelines-aks'
           workingDirectory: '$(System.DefaultWorkingDirectory)/03-Create-AKS-Cluster/stacks/tftec'
           commandOptions: '--var-file="../env/aovivo-sp-24/aovivosp24.tfvars"'
           allowTelemetryCollection: true        

@@ -14,7 +14,7 @@ stages:
           workingDirectory: '$(System.DefaultWorkingDirectory)/03-Create-AKS-Cluster/stacks/tftec'
           commandOptions: '-reconfigure'
           backendType: 'azurerm'
-          backendServiceArm: 'tftec-devops'
+          backendServiceArm: 'pipelines-aks'
           backendAzureRmResourceGroupName: '$(TF-BACKEND-RESOURCE-GROUP)'
           backendAzureRmStorageAccountName: '$(TF-BACKEND-STORAGE-ACCOUNT)'
           backendAzureRmContainerName: '$(TF-BACKEND-CONTAINER)'
@@ -33,7 +33,7 @@ stages:
         displayName: Terraform Plan (Destroy)
         inputs:
           command: 'plan'
-          environmentServiceName: 'tftec-devops'
+          environmentServiceName: 'pipelines-aks'
           workingDirectory: '$(System.DefaultWorkingDirectory)/03-Create-AKS-Cluster/stacks/tftec'
           commandOptions: '-destroy --var-file="../env/aovivo-sp-24/aovivosp24.tfvars"'
           allowTelemetryCollection: true
@@ -42,7 +42,7 @@ stages:
         displayName: Terraform Apply (Destroy)
         inputs:
           command: 'apply'
-          environmentServiceName: 'tftec-devops'
+          environmentServiceName: 'pipelines-aks'
           workingDirectory: '$(System.DefaultWorkingDirectory)/03-Create-AKS-Cluster/stacks/tftec'
           commandOptions: '-destroy -auto-approve --var-file="../env/aovivo-sp-24/aovivosp24.tfvars"'
           allowTelemetryCollection: true

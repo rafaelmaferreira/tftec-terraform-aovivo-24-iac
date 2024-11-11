@@ -23,7 +23,7 @@ Click Save.
 
 Click Project settings > Pipelines > Service connections, click on the service connection created when creating the link with Azure Key Vault.
 
-Click edit and change the name to: `tftec-devops`. Click on Verify, select Grant access permissions to all pipelines and save.
+Click edit and change the name to: `pipelines-aks`. Click on Verify, select Grant access permissions to all pipelines and save.
 
 ### 6. Installing the extension required for Terraform commands in the pipeline.
 
